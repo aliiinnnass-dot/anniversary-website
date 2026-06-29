@@ -3,7 +3,7 @@ function checkPassword(){
 
 const pass=document.getElementById("password").value;
 
-if(pass==="30/6/2022"){
+if(pass.trim() === "30/6/2022"){
 
 document.getElementById("loginScreen").style.display="none";
 document.getElementById("main").style.display="block";
