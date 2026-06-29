@@ -112,23 +112,38 @@ box.appendChild(div);
 
 }
 
-// 📸 PHOTO UPLOAD
-function uploadPhoto(event){
+function uploadVideo(event){
 
-const file=event.target.files[0];
+const file = event.target.files[0];
 
-const reader=new FileReader();
+if(!file) return;
 
-reader.onload=function(){
+const reader = new FileReader();
 
-const img=document.createElement("img");
+reader.onload = function(){
 
-img.src=reader.result;
+const data = reader.result;
 
-document.getElementById("gallery").appendChild(img);
+const video = document.getElementById("loveVideo");
 
-}
+video.src = data;
+
+/* Save in browser */
+localStorage.setItem("loveVideo", data);
+
+};
 
 reader.readAsDataURL(file);
 
 }
+window.onload = function(){
+
+const saved = localStorage.getItem("loveVideo");
+
+if(saved){
+
+document.getElementById("loveVideo").src = saved;
+
+}
+
+};
