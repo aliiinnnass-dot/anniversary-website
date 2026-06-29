@@ -1,359 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Our Forever ❤️</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
-
+<title>Our Love Story ❤️</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- Falling Rose Petals -->
-<div id="petals"></div>
+<div class="container">
 
-<!-- Sparkles -->
-<div id="sparkles"></div>
-
-<!-- Fireflies -->
-<div id="fireflies"></div>
-
-<!-- LOGIN SCREEN -->
- <div id="login-screen">
-   <!-- password input -->
-</div>
-
-<div id="website" style="display:none;">
-   <!-- ALL your main content here -->
-</div>
-    
-<!-- Night Sky -->
-<div id="sky">
-
-<div id="moon"></div>
-
-<div id="stars"></div>
-
-</div>
-
-<!-- Story Book -->
-
-<div id="magicBook">
-
-<div class="book">
-
-<div class="cover">
-
-<h1>❤️</h1>
-
-<h2>Our Story</h2>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Music -->
-
-<audio
-id="music"
-loop>
-
-<source src="music/song.mp3" type="audio/mpeg">
-
-</audio>
-
-<button id="musicButton">
-
-🎵
-
-</button>
-<div id="login-screen">
-
-<div class="login-box">
-
-<h1>✨ Our Love Story ✨</h1>
-
-<p>
-Enter the date that changed our lives forever...
-</p>
-
-<input
-type="password"
-id="password"
-placeholder="DD/MM/YYYY">
-
-<button onclick="checkPassword()">
-Open My Heart ❤️
-</button>
-
-<p id="wrong-password"></p>
-
-</div>
-
-</div>
-
-<!-- MAIN WEBSITE -->
-
-<div id="website">
-
-<header>
-
-<h1>
-Happy Anniversary My Love ❤️
-</h1>
-
-<p>
-Four Years Down...
-Forever To Go.
-</p>
-
-</header>
-
-<section class="intro">
-
-<h2>
-Welcome Home ❤️
-</h2>
-
-<p>
-No matter how many miles separate us,
-my heart has always found its way back to you.
-
-This little website is a piece of my heart,
-made especially for you.
-</p>
-
-</section>
+<h1>🌙 Our Love Story ❤️</h1>
 
 <!-- LOVE LETTER -->
+<section class="card">
+<h2>💌 Love Letter</h2>
+<p>
+My love,<br><br>
 
-<section class="letter">
+From the moment I met you, my life became brighter.
+Even across distance, you feel like home to me.
+Every day I love you more than yesterday.<br><br>
 
-<h2>💌 My Love Letter</h2>
+You are my comfort, my happiness, my safe place,
+and my forever person.<br><br>
 
-<div class="letter-box">
+No matter where life takes us, I will always choose you.<br><br>
 
-<p id="letter-text">
-
-My Dearest Love,
-
-<br><br>
-
-Four years ago our journey began...
-
-Since then you've become my happiest place,
-my biggest comfort,
-my greatest adventure,
-and the person I want beside me for every chapter still waiting to be written.
-
-Distance has never measured our love
-only the miles between our hugs.
-
-Every laugh,
-every late-night call,
-every "I miss you",
-every smile you've given me,
-has become one of my favourite memories.
-
-You make ordinary days magical.
-
-You remind me what love truly feels like.
-
-Thank you for choosing us every single day.
-
-No matter how long the distance lasts,
-I know one day we'll look back at it
-and smile because we made it through together.
-
-Happy Anniversary, my love.
-
-Here's to forever.
-
-❤️
-
+Forever yours ❤️
 </p>
-
-</div>
-
 </section>
-
-<!-- 100 REASONS -->
-
-<section class="reasons">
-
-<h2>
-100 Reasons Why I Love You ❤️
-</h2>
-
-<div id="reasons-container">
-
-<!-- Filled by JavaScript -->
-
-</div>
-
-</section>
-
-<!-- PHOTO GALLERY -->
-<section class="gallery">
-
-<h2>📸 Our Memory Lane 📸</h2>
-
-<p class="galleryText">
-Every picture tells a story...
-Every story reminds me why I love you.
-</p>
-
-<div class="gallery-grid">
-
-<!-- POLAROID 1 -->
-<div class="polaroid">
-    <div class="tape"></div>
-
-    <img id="photo1" src="">
-
-    <input type="file" accept="image/*"
-        onchange="loadPhoto(event,'photo1')">
-
-    <input class="captionInput"
-        placeholder="Write a memory...">
-</div>
-
-<!-- POLAROID 2 -->
-<div class="polaroid">
-    <div class="tape"></div>
-
-    <img id="photo2" src="">
-
-    <input type="file" accept="image/*"
-        onchange="loadPhoto(event,'photo2')">
-
-    <input class="captionInput"
-        placeholder="Another beautiful memory...">
-</div>
-
-<!-- POLAROID 3 -->
-<div class="polaroid">
-    <div class="tape"></div>
-
-    <img id="photo3" src="">
-
-    <input type="file" accept="image/*"
-        onchange="loadPhoto(event,'photo3')">
-
-    <input class="captionInput"
-        placeholder="One of my favourite moments ❤️">
-</div>
-
-<!-- POLAROID 4 -->
-<div class="polaroid">
-    <div class="tape"></div>
-
-    <img id="photo4" src="">
-
-    <input type="file" accept="image/*"
-        onchange="loadPhoto(event,'photo4')">
-
-    <input class="captionInput"
-        placeholder="Forever memory...">
-</div>
-
-</div>
-
-</section>
-
 
 <!-- TIMER -->
-
-<section class="timer">
-
-<h2>
-We've Been Together...
-</h2>
-
-<div id="counter">
-
-<div class="time-box">
-<h3 id="years">0</h3>
-<span>Years</span>
-</div>
-
-<div class="time-box">
-<h3 id="months">0</h3>
-<span>Months</span>
-</div>
-
-<div class="time-box">
-<h3 id="days">0</h3>
-<span>Days</span>
-</div>
-
-<div class="time-box">
-<h3 id="hours">0</h3>
-<span>Hours</span>
-</div>
-
-<div class="time-box">
-<h3 id="minutes">0</h3>
-<span>Minutes</span>
-</div>
-
-<div class="time-box">
-<h3 id="seconds">0</h3>
-<span>Seconds</span>
-</div>
-
-</div>
-
+<section class="card">
+<h2>⏳ Our Time Together</h2>
+<p id="timer"></p>
 </section>
 
-<footer>
+<!-- REASONS -->
+<section class="card">
+<h2>💖 50 Reasons Why I Love You</h2>
+<div id="reasons"></div>
+</section>
 
-<h2>
-Every Love Story Is Beautiful...
-
-<br>
-
-Ours Is My Favourite.
-
-❤️
-
-</h2>
-
-</footer>
-
-</div>
-<!-- Magical Photo Viewer -->
-<div id="photoViewer">
-
-    <span id="closeViewer">&times;</span>
-
-    <img id="viewerImage">
-
-    <div id="viewerGlow"></div>
-
-</div>
-<!-- FINAL CELEBRATION SCREEN -->
-<div id="finalScreen">
-
-    <h1 id="finalText">❤️ Happy Anniversary ❤️</h1>
-
-    <p id="finalSub">Forever & Always...</p>
+<!-- PHOTO UPLOAD -->
+<section class="card">
+<h2>📸 Our Memories</h2>
+<input type="file" accept="image/*" onchange="addPhoto(event)">
+<div id="gallery"></div>
+</section>
 
 </div>
 
-<!-- FIREWORKS CANVAS -->
-<canvas id="fireworks"></canvas> 
-    
 <script src="script.js"></script>
-
 </body>
 </html>
