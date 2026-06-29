@@ -112,38 +112,4 @@ box.appendChild(div);
 
 }
 
-function uploadVideo(event){
 
-const file = event.target.files[0];
-
-if(!file) return;
-
-const reader = new FileReader();
-
-reader.onload = function(){
-
-const data = reader.result;
-
-const video = document.getElementById("loveVideo");
-
-video.src = data;
-
-/* Save in browser */
-localStorage.setItem("loveVideo", data);
-
-};
-
-reader.readAsDataURL(file);
-
-}
-window.onload = function(){
-
-const saved = localStorage.getItem("loveVideo");
-
-if(saved){
-
-document.getElementById("loveVideo").src = saved;
-
-}
-
-};
