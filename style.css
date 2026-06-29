@@ -88,14 +88,11 @@ border-radius:10px;
 }
 
 #loveVideo{
-
-width:90%;
-max-width:700px;
-
-border-radius:20px;
-
-box-shadow:0 0 25px hotpink;
-
-background:black;
-
+    width:90%;
+    max-width:800px;
+    display:block;
+    margin:20px auto;
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(255,105,180,.5);
+    background:#000;
 }
