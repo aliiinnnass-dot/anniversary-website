@@ -8,47 +8,64 @@
 
 <body>
 
-<div class="container">
+<!-- 🌙 BACKGROUND EFFECT -->
+<div class="stars"></div>
 
-<h1>🌙 Our Love Story ❤️</h1>
+<!-- 🔐 LOGIN SCREEN -->
+<div id="loginScreen">
+    <div class="loginBox">
+        <h1>💖 Enter Our Secret Date 💖</h1>
+        <p>Hint: the day we started ❤️</p>
+        <input type="password" id="password" placeholder="DD/MM/YYYY">
+        <button onclick="checkPassword()">Enter</button>
+    </div>
+</div>
 
-<!-- LOVE LETTER -->
-<section class="card">
-<h2>💌 Love Letter</h2>
-<p>
+<!-- 💖 MAIN WEBSITE -->
+<div id="main" style="display:none;">
+
+    <h1 class="title">🌙 Our Love Story ❤️</h1>
+
+    <!-- ⏳ TIMER -->
+    <div class="card">
+        <h2>⏳ Our Journey</h2>
+        <p id="timer"></p>
+    </div>
+
+    <!-- 💌 LOVE LETTER -->
+    <div class="card">
+        <h2>💌 My Love Letter to You</h2>
+        <p class="letter">
+
 My love,<br><br>
 
-From the moment I met you, my life became brighter.
-Even across distance, you feel like home to me.
-Every day I love you more than yesterday.<br><br>
+From the moment you came into my life, everything changed in the most beautiful way. You became my peace in chaos, my smile on hard days, and my safe place when the world felt heavy.<br><br>
 
-You are my comfort, my happiness, my safe place,
-and my forever person.<br><br>
+Even though distance exists between us, my heart never feels far from you. You live in my thoughts, in my prayers, and in every heartbeat I feel.<br><br>
 
-No matter where life takes us, I will always choose you.<br><br>
+I love the way you understand me without words, the way you care so deeply, and the way you make even the simplest moments feel special. You are not just someone I love — you are the person my soul recognizes as home.<br><br>
 
-Forever yours ❤️
-</p>
-</section>
+No matter how many days pass, how many miles are between us, or how life changes, one thing will always remain constant — my love for you.<br><br>
 
-<!-- TIMER -->
-<section class="card">
-<h2>⏳ Our Time Together</h2>
-<p id="timer"></p>
-</section>
+I choose you today, tomorrow, and in every lifetime that exists beyond this one. If I had to do it all again, I would still find my way back to you every single time.<br><br>
 
-<!-- REASONS -->
-<section class="card">
-<h2>💖 50 Reasons Why I Love You</h2>
-<div id="reasons"></div>
-</section>
+You are my forever. ❤️
 
-<!-- PHOTO UPLOAD -->
-<section class="card">
-<h2>📸 Our Memories</h2>
-<input type="file" accept="image/*" onchange="addPhoto(event)">
-<div id="gallery"></div>
-</section>
+        </p>
+    </div>
+
+    <!-- 💖 REASONS -->
+    <div class="card">
+        <h2>💖 50 Reasons Why I Love You</h2>
+        <div id="reasons"></div>
+    </div>
+
+    <!-- 📸 GALLERY -->
+    <div class="card">
+        <h2>📸 Our Memories</h2>
+        <input type="file" accept="image/*" onchange="uploadPhoto(event)">
+        <div id="gallery"></div>
+    </div>
 
 </div>
 
